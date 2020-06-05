@@ -12,6 +12,9 @@ class InputConnectionController implements TextInputClient {
   InputConnectionController(this.onValueChanged)
       : assert(onValueChanged != null);
 
+  @override
+  noSuchMethod(Invocation invocation) => invocation;
+
   //
   // public members
   //
